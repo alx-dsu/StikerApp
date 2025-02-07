@@ -1,8 +1,15 @@
 import { Tabs } from "expo-router";
+import { View, StatusBar } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 export default function TabLayout() {
   return (
+    <View style={{ flex: 1, backgroundColor: '#ffd33d' }}> 
+      <StatusBar 
+        translucent 
+        backgroundColor="#25292e" 
+        barStyle="light-content" 
+      />
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#ffd33d",
@@ -45,5 +52,6 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
+    </View>
   );
 }

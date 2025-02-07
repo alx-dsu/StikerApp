@@ -5,8 +5,9 @@ import PropTypes from "prop-types";
 export default function ImageViewer({ imgSource, selectedImage }) {
   const imageSource = selectedImage ? { uri: selectedImage } : imgSource;
 
-  return <Image source={imageSource} style={styles.image} />;
-  // return <Image source={imgSource} style={styles.image} />;
+  return (
+    <Image source={imageSource} style={styles.image} />
+  );
 }
 
 ImageViewer.propTypes = {
