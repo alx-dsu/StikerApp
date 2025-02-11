@@ -5,11 +5,11 @@ import { Ionicons } from "@expo/vector-icons";
 export default function TabLayout() {
   return (
     <View style={{ flex: 1, backgroundColor: "#ffd33d" }}>
-      <StatusBar
+      {/* <StatusBar
         translucent
         backgroundColor="#25292e"
         barStyle="light-content"
-      />
+      /> */}
       <Tabs
         screenOptions={{
           tabBarActiveTintColor: "#ffd33d",
